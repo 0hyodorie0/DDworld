@@ -99,3 +99,17 @@ input.form-control::placeholder {
     background: rgb(255, 125, 65);
     background: linear-gradient(304deg, rgba(255, 125, 65, 1) 0%, rgba(255, 158, 0, 0.4962359943977591) 13%, rgba(255, 158, 0, 0) 47%);
 }
+
+.navbar {
+    justify-content: end;
+    background: transparent;
+}
+
+.nav-link {
+    color: rgb(255, 125, 65);
+    padding: 0.5rem 2rem;
+}
+
+.nav-link:hover {
+    color: #777;
+}
