@@ -17,27 +17,46 @@
 <body>
     <header>
         <nav>
-            <h1 class="logo"><a href="">DD world</a></h1>
+            <!-- <ul>
+                <li>
+                    <a href=""></a>
+                </li>
+                <li>
+                    <a href=""></a>
+                </li>
+                <li>
+                    <a href=""></a>
+                </li>
+                <li>
+                    <a href=""></a>
+                </li>
+            </ul> -->
         </nav>
     </header>
-    <section class="main_login">
-        <div class="">
-            <h2>Login</h2>
-            <form action="">
-                <label for="">ID</label><input type="text">
-                <label for="">PW</label><input type="password">
-                <input type="submit">
-            </form>
-            <div기 class="">
-                <a href="">ID찾기</a>
-                <a href="">PW찾기</a>
-            </div기 </div>
-    </section>
-    <section class="main_cont">
-
-    </section>
+    <div class="row main_wrap">
+        <section class="col-4 main_section main_login">
+            <div class="form-group">
+                <h1 class="logo">
+                    <a href="" class="logo_img"><img src="img/logo/3.jpg" alt=""></a>
+                </h1>
+                <form action="">
+                    <label for="usr" hidden>ID</label><input type="text" class="form-control form-control-lg" id="usr" placeholder="아이디">
+                    <label for="pwd" hidden>PW</label><input type="password" placeholder="비밀번호" class="form-control form-control-lg" id="pwd">
+                    <input type="submit" class="btn" value="로그인">
+                </form>
+                <div class="lost_account">
+                    <a href="">ID 찾기</a>
+                    <a href="">PW 찾기</a>
+                    <a href="">회원가입</a>
+                </div>
+            </div>
+        </section>
+        <section class="col-8 main_section main_cont">
+            .
+        </section>
+    </div>
     <footer>
-
+        <p>Copyright © 2022 DDworld.,Ltd. All rights reserved.</p>
     </footer>
 </body>
 

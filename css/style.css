@@ -14,8 +14,6 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-    background: rgb(245, 95, 58);
-    background: linear-gradient(328deg, rgba(245, 95, 58, 1) 0%, rgba(255, 125, 65, 1) 35%, rgba(255, 158, 0, 0.4) 100%);
 }
 
 ul,
@@ -29,4 +27,75 @@ a:visited,
 a:hover {
     text-decoration: none;
     color: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+input[type=submit] {
+    background: rgb(237, 100, 8);
+    border: 1px solid rgb(237, 100, 8);
+    color: #fff;
+    width: 100%;
+    padding: 10px 0;
+    font-weight: 700;
+}
+
+input[type=submit]:hover {
+    color: rgb(237, 100, 8);
+    border: 1px solid rgb(237, 100, 8);
+    background: #fff;
+    width: 100%;
+}
+
+.main_section {
+    padding: 1em 3em;
+}
+
+.main_login {
+    /* width: 30%; */
+}
+
+.logo {
+    width: 100%;
+    padding: 0 0.5em;
+}
+
+.form-control:focus {
+    border-color: rgb(237, 100, 8);
+    box-shadow: 0 0 0 0.2rem rgba(255, 102, 0, 0.25);
+}
+
+input.form-control::placeholder {
+    color: #ccc;
+    font-size: 0.8em;
+}
+
+.main_login .form-control {
+    margin: 10px 0;
+}
+
+.lost_account {
+    display: flex;
+    justify-content: space-between;
+    color: #777;
+    font-size: 0.9em;
+    margin-top: 15px;
+    letter-spacing: -1px;
+}
+
+.lost_account>*:hover {
+    color: rgb(237, 100, 8);
+}
+
+.main_cont {}
+
+.main_wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    background: rgb(255, 125, 65);
+    background: linear-gradient(304deg, rgba(255, 125, 65, 1) 0%, rgba(255, 158, 0, 0.4962359943977591) 13%, rgba(255, 158, 0, 0) 47%);
 }
