@@ -14,19 +14,18 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-}
-
-ul,
-li {
-    margin: 0;
-    padding: 0;
+    font-size: 15px;
 }
 
 a,
 a:visited,
 a:hover {
-    text-decoration: none;
+    /* text-decoration: none; */
     color: inherit;
+}
+
+a:hover {
+    color: rgb(237, 100, 8);
 }
 
 img {
@@ -51,10 +50,6 @@ input[type=submit]:hover {
 
 .main_section {
     padding: 1em 3em;
-}
-
-.main_login {
-    /* width: 30%; */
 }
 
 .logo {
@@ -85,10 +80,6 @@ input.form-control::placeholder {
     letter-spacing: -1px;
 }
 
-.lost_account>*:hover {
-    color: rgb(237, 100, 8);
-}
-
 .main_cont {}
 
 .main_wrap {
@@ -114,6 +105,10 @@ input.form-control::placeholder {
     color: #777;
 }
 
+.orange {
+    color: rgb(255, 125, 65);
+}
+
 .minihome {
     height: 100vh;
     background: url(../img/skin_default.png)
@@ -130,6 +125,7 @@ input.form-control::placeholder {
 }
 
 .minihome_cont {
+    position: relative;
     padding: 2em;
     height: 100%;
 }
@@ -141,8 +137,8 @@ input.form-control::placeholder {
     top: 1.3em;
     left: 50%;
     transform: translate(-50%);
-    width: 95%;
-    height: 94%;
+    width: 96%;
+    height: 95%;
     border-radius: 20px;
     border: 1px dashed #fff;
 }
@@ -153,8 +149,7 @@ input.form-control::placeholder {
     border: 1.5px solid #000;
     border-radius: 20px;
     z-index: 1;
-    padding-top: 4em;
-    padding-bottom: 1em;
+    padding: 2em 0 1em;
 }
 
 .minihome_in_l,
@@ -167,9 +162,143 @@ input.form-control::placeholder {
 .minihome_in_l {
     border-right: transparent;
     padding-right: 3px;
+    padding-left: 1em;
 }
 
 .minihome_in_r {
     border-left: transparent;
     padding-left: 3px;
+    padding-right: 1em;
+}
+
+.minihome_title span {
+    font-size: 1.4em;
+}
+
+.intro {
+    padding: 1.5em;
+    border: 1px solid #000;
+    border-radius: 10px;
+    height: 95%;
+}
+
+.intro_pic {
+    height: 15em;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: lightblue
+}
+
+.intro_email a {
+    color: navy;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.intro_email a:hover {
+    text-decoration: none;
+}
+
+.intro_quote {
+    height: 10em;
+    padding: 1em;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.minihome_right {
+    width: 100%;
+    border: 1px solid #000;
+    border-radius: 10px;
+    margin-right: 1em;
+    height: 95%;
+    overflow-y: scroll;
+}
+
+.minimain {
+    padding: 1em 3em;
+}
+
+.minimain h3 {
+    font-size: 1em;
+    font-weight: 600;
+    color: #4FB4D8;
+    margin: 0 0 10px 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #777;
+}
+
+.minimain section {
+    margin-bottom: 1em;
+}
+
+.minimain_news ul {
+    padding: 0;
+    margin-left: 20px;
+}
+
+.minimain_news a {
+    display: block;
+}
+
+.miniroom {
+    height: 18em;
+    background: gray;
+}
+
+.ilchon_link {
+    font-size: 0.9em;
+}
+
+.minimain .table td,
+.minimain .table th {
+    padding: 3px;
+    border-top: unset;
+}
+
+.ilchon_quote li,
+.ilchon_quote ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.ilchon_quote li>span {
+    margin-right: 10px;
+}
+
+.minihome_menu {
+    position: absolute;
+    top: 5em;
+    right: -3.5em;
+}
+
+.minihome_menu ul,
+.minihome_menu li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+
+.minihome_menu li {
+    margin-bottom: 4px;
+}
+
+.minihome_menu a {
+    display: block;
+    padding: 0.8em;
+    background: #4FB4D8;
+    color: #fff;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 1px solid #000;
+    border-left: none;
+}
+
+.minihome_menu a:hover,
+.minihome_menu a.active {
+    text-decoration: none;
+    background: #fff;
+    color: #000;
 }
