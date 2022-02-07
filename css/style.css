@@ -113,3 +113,63 @@ input.form-control::placeholder {
 .nav-link:hover {
     color: #777;
 }
+
+.minihome {
+    height: 100vh;
+    background: url(../img/skin_default.png)
+}
+
+.minihome_edge {
+    border-radius: 20px;
+    height: 80%;
+}
+
+.minihome_edge {
+    position: relative;
+    background-color: #4FB4D8;
+}
+
+.minihome_cont {
+    padding: 2em;
+    height: 100%;
+}
+
+.minihome_cont::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 1.3em;
+    left: 50%;
+    transform: translate(-50%);
+    width: 95%;
+    height: 94%;
+    border-radius: 20px;
+    border: 1px dashed #fff;
+}
+
+.minihome_in {
+    height: 100%;
+    background: #fff;
+    border: 1.5px solid #000;
+    border-radius: 20px;
+    z-index: 1;
+    padding-top: 4em;
+    padding-bottom: 1em;
+}
+
+.minihome_in_l,
+.minihome_in_r {
+    border-radius: 20px;
+    height: 100%;
+    border: 1px solid #000;
+}
+
+.minihome_in_l {
+    border-right: transparent;
+    padding-right: 3px;
+}
+
+.minihome_in_r {
+    border-left: transparent;
+    padding-left: 3px;
+}
