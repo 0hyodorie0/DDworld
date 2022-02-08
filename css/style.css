@@ -18,6 +18,23 @@ body {
     overflow: hidden;
 }
 
+.inner {
+    overflow: unset;
+}
+
+.inner {
+    width: 100%;
+    height: 100%;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+}
+
 a,
 a:visited,
 a:hover {
@@ -189,20 +206,26 @@ input.form-control::placeholder {
     color: rgb(255, 125, 65);
 }
 
+
+/*
 .minihome {
     height: 100vh;
-    background: url(../img/skin_default.png)
+    background: url(../images/skin_default.png)
 }
+*/
 
 .minihome_edge {
     border-radius: 20px;
     height: 80%;
 }
 
+
+/*
 .minihome_edge {
     position: relative;
     background-color: #4FB4D8;
 }
+*/
 
 .minihome_cont {
     position: relative;
@@ -292,7 +315,7 @@ input.form-control::placeholder {
     border-radius: 10px;
     margin-right: 1em;
     height: 95%;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
 }
 
 .minimain {
