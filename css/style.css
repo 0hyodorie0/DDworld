@@ -50,7 +50,7 @@ img {
     max-width: 100%;
 }
 
-input[type=submit] {
+.btn {
     background: rgb(237, 100, 8);
     border: 1px solid rgb(237, 100, 8);
     color: #fff;
@@ -59,12 +59,18 @@ input[type=submit] {
     font-weight: 700;
 }
 
-input[type=submit]:hover {
+.btn:hover {
     color: rgb(237, 100, 8);
     border: 1px solid rgb(237, 100, 8);
     background: #fff;
-    width: 100%;
 }
+
+.input_btn {
+    width: unset;
+    padding: 0 10px;
+}
+
+.input_btn:hover {}
 
 .main_section {
     padding: 1em 3em;
@@ -215,6 +221,8 @@ input.form-control::placeholder {
 */
 
 .minihome_edge {
+    max-width: 1199px;
+    min-width: 980px;
     border-radius: 20px;
     height: 80%;
 }
@@ -283,13 +291,19 @@ input.form-control::placeholder {
     border: 1px solid #000;
     border-radius: 10px;
     height: 95%;
+    position: relative;
 }
 
 .intro_pic {
     height: 15em;
     border-radius: 10px;
     overflow: hidden;
-    background-color: lightblue
+    text-align: center;
+}
+
+.intro_pic img {
+    width: auto;
+    height: 100%;
 }
 
 .intro_email a {
@@ -307,6 +321,14 @@ input.form-control::placeholder {
     padding: 1em;
     overflow-y: auto;
     overflow-x: hidden;
+}
+
+.intro_ilchon {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 2em;
+    width: 80%;
 }
 
 .minihome_right {
@@ -346,7 +368,6 @@ input.form-control::placeholder {
 
 .miniroom {
     height: 18em;
-    background: gray;
 }
 
 .ilchon_link {
@@ -388,6 +409,8 @@ input.form-control::placeholder {
     margin-bottom: 4px;
 }
 
+
+/*
 .minihome_menu a {
     display: block;
     padding: 0.8em;
@@ -404,6 +427,47 @@ input.form-control::placeholder {
     text-decoration: none;
     background: #fff;
     color: #000;
+}
+*/
+
+.minimi_area {
+    width: 100%;
+    height: 180px;
+    background: gray;
+    padding: 1em;
+}
+
+.write_wrap,
+.gbook_user_info,
+.gbook_reply {
+    background: #f2f2f2;
+}
+
+.write_wrap textarea {
+    width: 100%;
+    height: 180px;
+}
+
+.page_title {
+    font-weight: 600;
+}
+
+.gbook_article {
+    margin: 2em 0;
+    padding: 2em;
+}
+
+.gbook_reply textarea {
+    width: 85%;
+    vertical-align: bottom;
+}
+
+.page-link {
+    color: #444;
+}
+
+.page-link:hover {
+    color: rgb(237, 100, 8);
 }
 
 footer {
