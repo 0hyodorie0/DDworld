@@ -15,6 +15,7 @@ body {
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
+    overflow: hidden;
 }
 
 a,
@@ -52,6 +53,10 @@ input[type=submit]:hover {
     padding: 1em 3em;
 }
 
+.main_login {
+    padding: 1em 10em;
+}
+
 .logo {
     width: 100%;
     padding: 0 0.5em;
@@ -80,7 +85,74 @@ input.form-control::placeholder {
     letter-spacing: -1px;
 }
 
-.main_cont {}
+.main_cont {
+    font-size: 0;
+    padding-right: 60px;
+}
+
+.main_cont>* {
+    display: inline-block;
+    width: 40%;
+    font-size: 15px;
+    height: 300px;
+    padding: 15px;
+}
+
+.card_area_lg {
+    width: 60%;
+}
+
+.card_area .card {
+    border-radius: 2em;
+    height: 100%;
+    transition: ease-in-out .4s;
+    background-color: rgba(255, 255, 255, 0.4)
+}
+
+.card_area .card:hover {
+    border-color: rgb(237, 100, 8);
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 2px 3px 20px rgba(0, 0, 0, 0.2);
+    animation: float ease-in-out 1s infinite;
+}
+
+.card-title {
+    display: inline-block;
+    position: relative;
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 1em;
+    color: #777;
+}
+
+.card-title::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 130%;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: rgb(237, 100, 8);
+    transition: 0.6s;
+}
+
+.card_area .card:hover .card-title {
+    color: rgb(237, 100, 8)
+}
+
+.card_area .card:hover .card-title::after {
+    width: 100%;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0.5%);
+    }
+    100% {
+        transform: translateY(3%);
+    }
+}
 
 .main_wrap {
     display: flex;
@@ -301,4 +373,12 @@ input.form-control::placeholder {
     text-decoration: none;
     background: #fff;
     color: #000;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #777;
 }
