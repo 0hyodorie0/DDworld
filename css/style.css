@@ -102,6 +102,10 @@ input.form-control::placeholder {
     width: 60%;
 }
 
+.card_area_full {
+    width: 100%;
+}
+
 .card_area .card {
     border-radius: 2em;
     height: 100%;
